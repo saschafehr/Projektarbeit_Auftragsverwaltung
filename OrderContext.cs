@@ -37,14 +37,68 @@ namespace Projektarbeit_Auftragsverwaltung
 
                 .HasKey(i => i.ItemGroupID);
 
+            modelBuilder.Entity<Customer>()
+                .HasKey(c => c.CustomerID);
 
-            modelBuilder.Entity<Item>(entity =>
-            {
-                entity.Property(e => e.Price).HasColumnType("decimal(7, 2)");
-      
-            });
+            modelBuilder.Entity<Customer>()
+                .HasOne(c => c.Address)
+                .WithMany(a => a.Customer)
+                .HasForeignKey(c => c.AddressID)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Address>()
+                .HasKey(a => a.AddressID);
+
+
+            modelBuilder.Entity<Item>()
+               .HasKey(i => i.ItemID);
+
+            modelBuilder.Entity<Item>()
+                .HasOne(i => i.ItemGroup)
+                .WithMany(ig => ig.Items)
+                .HasForeignKey(i => i.ItemGroupID)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<ItemGroup>()
+               .HasKey(ig => ig.ItemGroupID);
+
+            //modelBuilder.Entity<ItemGroup>()
+            //    .HasOne(ig => ig.Parent)
+            //    .WithMany(ig => ig.Childrens)
+            //    .HasForeignKey(ig => ig.ParentID)
+            //    .OnDelete(DeleteBehavior.NoAction);
+
+
             modelBuilder.Entity<OrderPosition>()
-    .HasKey(op => new { op.OrderID, op.OrderPositionID });
+                .HasKey(op => new { op.OrderID, op.OrderPositionID });
+
+            modelBuilder.Entity<OrderPosition>()
+                .HasOne(op => op.Item)
+                .WithMany(i => i.OrderPositions)
+                .HasForeignKey(op => op.ItemID)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<OrderPosition>()
+                .HasOne(op => op.Order)
+                .WithMany(o => o.OrderPosition)
+                .HasForeignKey(op => op.OrderID)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Order>()
+                .HasKey(o => o.OrderID);
+
+            modelBuilder.Entity<Order>()
+                .HasOne(o => o.Customer)
+                .WithMany(c => c.Order)
+                .HasForeignKey(p => p.CustomerID)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            //modelBuilder.Entity<Item>(entity =>
+            //{
+            //    entity.Property(e => e.Price).HasColumnType("decimal(7, 2)");
+
+            //});
+            //modelBuilder.Entity<OrderPosition>().HasKey(op => new { op.OrderID, op.OrderPositionID });
 
             #region Beispiel
             modelBuilder.Entity<VAT>().HasData(new VAT() { VATID = 1, Rate = 7.7, Name = "Normalsatz" });

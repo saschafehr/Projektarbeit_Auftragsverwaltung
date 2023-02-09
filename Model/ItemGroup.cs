@@ -15,7 +15,7 @@ namespace Projektarbeit_Auftragsverwaltung.Model
         public int? ParentID { get; set; }
         public virtual ItemGroup Parent { get; set; }
 
-        public virtual List<ItemGroup> Children { get; set; }
+        public virtual List<ItemGroup> Childrens { get; set; }
 
         public virtual ICollection<Item> Items { get; set; }
 

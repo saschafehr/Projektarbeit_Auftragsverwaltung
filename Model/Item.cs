@@ -11,13 +11,14 @@ namespace Projektarbeit_Auftragsverwaltung.Model
     {
         public int ItemID { get; set; }
         public string Title { get; set; }
-        // [Column(TypeName = "decimal(7,2)")]
         public double Price { get; set; }
+
         public int ItemGroupID { get; set; }
         public virtual ItemGroup ItemGroup { get; set; }
+
         public int VATID { get; set; }
         public virtual VAT VAT { get; set; }
 
-        public virtual ICollection<OrderPosition> OrderPosition { get; set; }
+        public virtual ICollection<OrderPosition> OrderPositions { get; set; }
     }
 }

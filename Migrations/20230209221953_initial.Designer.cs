@@ -12,8 +12,8 @@ using Projektarbeit_Auftragsverwaltung;
 namespace ProjektarbeitAuftragsverwaltung.Migrations
 {
     [DbContext(typeof(OrderContext))]
-    [Migration("20230205165731_InitialCreateAndSampleData")]
-    partial class InitialCreateAndSampleData
+    [Migration("20230209221953_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -416,15 +416,15 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Firstname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Lastname")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Vorname")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -443,450 +443,450 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                             CustomerID = 1,
                             AddressID = 1,
                             Email = "sw@gmx.ch",
-                            Name = "Wuttke",
-                            Password = "123",
-                            Vorname = "Sandro"
+                            Firstname = "Sandro",
+                            Lastname = "Wuttke",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 2,
                             AddressID = 1,
                             Email = "saw@gmx.ch",
-                            Name = "Sau",
-                            Password = "123",
-                            Vorname = "Säuli"
+                            Firstname = "Säuli",
+                            Lastname = "Sau",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 3,
                             AddressID = 2,
                             Email = "sew@gmx.ch",
-                            Name = "Maus",
-                            Password = "123",
-                            Vorname = "Müsli"
+                            Firstname = "Müsli",
+                            Lastname = "Maus",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 4,
                             AddressID = 3,
                             Email = "pp@gmx.ch",
-                            Name = "Parker",
-                            Password = "123",
-                            Vorname = "Peter"
+                            Firstname = "Peter",
+                            Lastname = "Parker",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 5,
                             AddressID = 4,
                             Email = "mm@gmx.ch",
-                            Name = "Müller",
-                            Password = "123",
-                            Vorname = "Maria"
+                            Firstname = "Maria",
+                            Lastname = "Müller",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 6,
                             AddressID = 5,
                             Email = "max@gmx.ch",
-                            Name = "Meier",
-                            Password = "123",
-                            Vorname = "Max"
+                            Firstname = "Max",
+                            Lastname = "Meier",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 7,
                             AddressID = 6,
                             Email = "lisa@gmx.ch",
-                            Name = "Lustig",
-                            Password = "123",
-                            Vorname = "Lisa"
-                        },
-                        new
-                        {
-                            CustomerID = 8,
-                            AddressID = 7,
-                            Email = "tom@gmx.ch",
-                            Name = "Turner",
-                            Password = "123",
-                            Vorname = "Tom"
+                            Firstname = "Lisa",
+                            Lastname = "Lustig",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 9,
                             AddressID = 8,
                             Email = "anna@gmx.ch",
-                            Name = "Albrecht",
-                            Password = "123",
-                            Vorname = "Anna"
+                            Firstname = "Anna",
+                            Lastname = "Albrecht",
+                            Password = "123"
+                        },
+                        new
+                        {
+                            CustomerID = 8,
+                            AddressID = 7,
+                            Email = "tom@gmx.ch",
+                            Firstname = "Tom",
+                            Lastname = "Turner",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 10,
                             AddressID = 9,
                             Email = "bert@gmx.ch",
-                            Name = "Bär",
-                            Password = "123",
-                            Vorname = "Bert"
+                            Firstname = "Bert",
+                            Lastname = "Bär",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 11,
                             AddressID = 10,
                             Email = "claudia@gmx.ch",
-                            Name = "Clerc",
-                            Password = "123",
-                            Vorname = "Claudia"
+                            Firstname = "Claudia",
+                            Lastname = "Clerc",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 12,
                             AddressID = 11,
                             Email = "david@gmx.ch",
-                            Name = "Dietrich",
-                            Password = "123",
-                            Vorname = "David"
+                            Firstname = "David",
+                            Lastname = "Dietrich",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 13,
                             AddressID = 12,
                             Email = "eva@gmx.ch",
-                            Name = "Eberhard",
-                            Password = "123",
-                            Vorname = "Eva"
+                            Firstname = "Eva",
+                            Lastname = "Eberhard",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 14,
                             AddressID = 13,
                             Email = "frank@gmx.ch",
-                            Name = "Friedrich",
-                            Password = "123",
-                            Vorname = "Frank"
+                            Firstname = "Frank",
+                            Lastname = "Friedrich",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 15,
                             AddressID = 14,
                             Email = "gabi@gmx.ch",
-                            Name = "Graf",
-                            Password = "123",
-                            Vorname = "Gabi"
+                            Firstname = "Gabi",
+                            Lastname = "Graf",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 16,
                             AddressID = 15,
                             Email = "hans@gmx.ch",
-                            Name = "Hertz",
-                            Password = "123",
-                            Vorname = "Hans"
+                            Firstname = "Hans",
+                            Lastname = "Hertz",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 17,
                             AddressID = 16,
                             Email = "irina@gmx.ch",
-                            Name = "Illinger",
-                            Password = "123",
-                            Vorname = "Irina"
+                            Firstname = "Irina",
+                            Lastname = "Illinger",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 18,
                             AddressID = 17,
                             Email = "jan@gmx.ch",
-                            Name = "Jung",
-                            Password = "123",
-                            Vorname = "Jan"
+                            Firstname = "Jan",
+                            Lastname = "Jung",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 19,
                             AddressID = 18,
                             Email = "klara@gmx.ch",
-                            Name = "Kern",
-                            Password = "123",
-                            Vorname = "Klara"
+                            Firstname = "Klara",
+                            Lastname = "Kern",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 20,
                             AddressID = 19,
                             Email = "luca@gmx.ch",
-                            Name = "Lenz",
-                            Password = "123",
-                            Vorname = "Luca"
+                            Firstname = "Luca",
+                            Lastname = "Lenz",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 21,
                             AddressID = 20,
                             Email = "monika@gmx.ch",
-                            Name = "Meyer",
-                            Password = "123",
-                            Vorname = "Monika"
+                            Firstname = "Monika",
+                            Lastname = "Meyer",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 22,
                             AddressID = 21,
                             Email = "nina@gmx.ch",
-                            Name = "Nussbaum",
-                            Password = "123",
-                            Vorname = "Nina"
+                            Firstname = "Nina",
+                            Lastname = "Nussbaum",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 23,
                             AddressID = 22,
                             Email = "otto@gmx.ch",
-                            Name = "Ochs",
-                            Password = "123",
-                            Vorname = "Otto"
+                            Firstname = "Otto",
+                            Lastname = "Ochs",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 24,
                             AddressID = 23,
                             Email = "paul@gmx.ch",
-                            Name = "Pfister",
-                            Password = "123",
-                            Vorname = "Paul"
+                            Firstname = "Paul",
+                            Lastname = "Pfister",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 25,
                             AddressID = 24,
                             Email = "queena@gmx.ch",
-                            Name = "Quast",
-                            Password = "123",
-                            Vorname = "Queena"
+                            Firstname = "Queena",
+                            Lastname = "Quast",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 26,
                             AddressID = 25,
                             Email = "roni@gmx.ch",
-                            Name = "Rau",
-                            Password = "123",
-                            Vorname = "Roni"
+                            Firstname = "Roni",
+                            Lastname = "Rau",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 27,
                             AddressID = 26,
                             Email = "stefan@gmx.ch",
-                            Name = "Schreiber",
-                            Password = "123",
-                            Vorname = "Stefan"
+                            Firstname = "Stefan",
+                            Lastname = "Schreiber",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 28,
                             AddressID = 27,
                             Email = "tina@gmx.ch",
-                            Name = "Tobler",
-                            Password = "123",
-                            Vorname = "Tina"
+                            Firstname = "Tina",
+                            Lastname = "Tobler",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 29,
                             AddressID = 28,
                             Email = "urs@gmx.ch",
-                            Name = "Uhlmann",
-                            Password = "123",
-                            Vorname = "Urs"
+                            Firstname = "Urs",
+                            Lastname = "Uhlmann",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 30,
                             AddressID = 29,
                             Email = "verena@gmx.ch",
-                            Name = "Vogel",
-                            Password = "123",
-                            Vorname = "Verena"
+                            Firstname = "Verena",
+                            Lastname = "Vogel",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 31,
                             AddressID = 30,
                             Email = "werner@gmx.ch",
-                            Name = "Weber",
-                            Password = "123",
-                            Vorname = "Werner"
+                            Firstname = "Werner",
+                            Lastname = "Weber",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 32,
                             AddressID = 31,
                             Email = "xenia@gmx.ch",
-                            Name = "Xaver",
-                            Password = "123",
-                            Vorname = "Xenia"
+                            Firstname = "Xenia",
+                            Lastname = "Xaver",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 33,
                             AddressID = 32,
                             Email = "yves@gmx.ch",
-                            Name = "Yannick",
-                            Password = "123",
-                            Vorname = "Yves"
+                            Firstname = "Yves",
+                            Lastname = "Yannick",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 34,
                             AddressID = 33,
                             Email = "zora@gmx.ch",
-                            Name = "Zimmermann",
-                            Password = "123",
-                            Vorname = "Zora"
+                            Firstname = "Zora",
+                            Lastname = "Zimmermann",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 35,
                             AddressID = 34,
                             Email = "anna@gmx.ch",
-                            Name = "Arnold",
-                            Password = "123",
-                            Vorname = "Anna"
+                            Firstname = "Anna",
+                            Lastname = "Arnold",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 36,
                             AddressID = 35,
                             Email = "bert@gmx.ch",
-                            Name = "Baumann",
-                            Password = "123",
-                            Vorname = "Bert"
+                            Firstname = "Bert",
+                            Lastname = "Baumann",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 37,
                             AddressID = 36,
                             Email = "claudia@gmx.ch",
-                            Name = "Clerc",
-                            Password = "123",
-                            Vorname = "Claudia"
+                            Firstname = "Claudia",
+                            Lastname = "Clerc",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 38,
                             AddressID = 37,
                             Email = "daniel@gmx.ch",
-                            Name = "Dietrich",
-                            Password = "123",
-                            Vorname = "Daniel"
+                            Firstname = "Daniel",
+                            Lastname = "Dietrich",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 39,
                             AddressID = 38,
                             Email = "emil@gmx.ch",
-                            Name = "Egger",
-                            Password = "123",
-                            Vorname = "Emil"
+                            Firstname = "Emil",
+                            Lastname = "Egger",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 40,
                             AddressID = 39,
                             Email = "franz@gmx.ch",
-                            Name = "Fuchs",
-                            Password = "123",
-                            Vorname = "Franz"
+                            Firstname = "Franz",
+                            Lastname = "Fuchs",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 41,
                             AddressID = 40,
                             Email = "gertrud@gmx.ch",
-                            Name = "Gut",
-                            Password = "123",
-                            Vorname = "Gertrud"
+                            Firstname = "Gertrud",
+                            Lastname = "Gut",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 42,
                             AddressID = 41,
                             Email = "heinz@gmx.ch",
-                            Name = "Huber",
-                            Password = "123",
-                            Vorname = "Heinz"
+                            Firstname = "Heinz",
+                            Lastname = "Huber",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 43,
                             AddressID = 42,
                             Email = "ingrid@gmx.ch",
-                            Name = "Isler",
-                            Password = "123",
-                            Vorname = "Ingrid"
+                            Firstname = "Ingrid",
+                            Lastname = "Isler",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 44,
                             AddressID = 43,
                             Email = "juerg@gmx.ch",
-                            Name = "Jäger",
-                            Password = "123",
-                            Vorname = "Jürg"
+                            Firstname = "Jürg",
+                            Lastname = "Jäger",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 45,
                             AddressID = 44,
                             Email = "kaethi@gmx.ch",
-                            Name = "Kühn",
-                            Password = "123",
-                            Vorname = "Käthi"
+                            Firstname = "Käthi",
+                            Lastname = "Kühn",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 46,
                             AddressID = 45,
                             Email = "luzia@gmx.ch",
-                            Name = "Lang",
-                            Password = "123",
-                            Vorname = "Luzia"
+                            Firstname = "Luzia",
+                            Lastname = "Lang",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 47,
                             AddressID = 46,
                             Email = "max@gmx.ch",
-                            Name = "Meyer",
-                            Password = "123",
-                            Vorname = "Max"
+                            Firstname = "Max",
+                            Lastname = "Meyer",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 48,
                             AddressID = 47,
                             Email = "nina@gmx.ch",
-                            Name = "Nussbaumer",
-                            Password = "123",
-                            Vorname = "Nina"
+                            Firstname = "Nina",
+                            Lastname = "Nussbaumer",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 49,
                             AddressID = 48,
                             Email = "otto@gmx.ch",
-                            Name = "Odermatt",
-                            Password = "123",
-                            Vorname = "Otto"
+                            Firstname = "Otto",
+                            Lastname = "Odermatt",
+                            Password = "123"
                         },
                         new
                         {
                             CustomerID = 50,
                             AddressID = 49,
                             Email = "paula@gmx.ch",
-                            Name = "Peier",
-                            Password = "123",
-                            Vorname = "Paula"
+                            Firstname = "Paula",
+                            Lastname = "Peier",
+                            Password = "123"
                         });
                 });
 
@@ -901,8 +901,8 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                     b.Property<int>("ItemGroupID")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(7, 2)");
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -924,7 +924,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 1,
                             ItemGroupID = 3,
-                            Price = 2300m,
+                            Price = 2300.0,
                             Title = "MacBook Pro",
                             VATID = 1
                         },
@@ -932,7 +932,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 2,
                             ItemGroupID = 3,
-                            Price = 1340m,
+                            Price = 1340.0,
                             Title = "MacBook Air",
                             VATID = 1
                         },
@@ -940,7 +940,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 3,
                             ItemGroupID = 3,
-                            Price = 1300m,
+                            Price = 1300.0,
                             Title = "Lenovo Legion",
                             VATID = 1
                         },
@@ -948,7 +948,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 4,
                             ItemGroupID = 3,
-                            Price = 1400m,
+                            Price = 1400.0,
                             Title = "HP Elitebook 830 G9",
                             VATID = 1
                         },
@@ -956,7 +956,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 5,
                             ItemGroupID = 3,
-                            Price = 300m,
+                            Price = 300.0,
                             Title = "Dell",
                             VATID = 1
                         },
@@ -964,7 +964,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 6,
                             ItemGroupID = 3,
-                            Price = 500m,
+                            Price = 500.0,
                             Title = "Acer Aspire 5",
                             VATID = 1
                         },
@@ -972,7 +972,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 7,
                             ItemGroupID = 3,
-                            Price = 1700m,
+                            Price = 1700.0,
                             Title = "MSI GE75 Raider",
                             VATID = 1
                         },
@@ -980,7 +980,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 8,
                             ItemGroupID = 10,
-                            Price = 1400m,
+                            Price = 1400.0,
                             Title = "Kamera Pro",
                             VATID = 1
                         },
@@ -988,7 +988,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 9,
                             ItemGroupID = 10,
-                            Price = 940m,
+                            Price = 940.0,
                             Title = "Kamera Beginner",
                             VATID = 1
                         },
@@ -996,7 +996,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 10,
                             ItemGroupID = 7,
-                            Price = 1850m,
+                            Price = 1850.0,
                             Title = "IPhone 13 Pro",
                             VATID = 1
                         },
@@ -1004,7 +1004,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 11,
                             ItemGroupID = 7,
-                            Price = 950m,
+                            Price = 950.0,
                             Title = "Samsung Galaxy",
                             VATID = 1
                         },
@@ -1012,7 +1012,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 12,
                             ItemGroupID = 7,
-                            Price = 1350m,
+                            Price = 1350.0,
                             Title = "Blackberry",
                             VATID = 1
                         },
@@ -1020,7 +1020,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 13,
                             ItemGroupID = 7,
-                            Price = 45890m,
+                            Price = 45890.0,
                             Title = "Nokia 3310",
                             VATID = 1
                         },
@@ -1028,7 +1028,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 14,
                             ItemGroupID = 7,
-                            Price = 850m,
+                            Price = 850.0,
                             Title = "Huawii",
                             VATID = 1
                         },
@@ -1036,7 +1036,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 15,
                             ItemGroupID = 11,
-                            Price = 850m,
+                            Price = 850.0,
                             Title = "Samsung TV (55)",
                             VATID = 1
                         },
@@ -1044,7 +1044,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 16,
                             ItemGroupID = 11,
-                            Price = 1150m,
+                            Price = 1150.0,
                             Title = "Samsung TV (65)",
                             VATID = 1
                         },
@@ -1052,7 +1052,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 17,
                             ItemGroupID = 11,
-                            Price = 1650m,
+                            Price = 1650.0,
                             Title = "Samsung TV (75)",
                             VATID = 1
                         },
@@ -1060,7 +1060,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 18,
                             ItemGroupID = 4,
-                            Price = 250m,
+                            Price = 250.0,
                             Title = "Holztisch (klein)",
                             VATID = 1
                         },
@@ -1068,7 +1068,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 19,
                             ItemGroupID = 4,
-                            Price = 450m,
+                            Price = 450.0,
                             Title = "Holztisch (gross)",
                             VATID = 1
                         },
@@ -1076,7 +1076,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 20,
                             ItemGroupID = 4,
-                            Price = 550m,
+                            Price = 550.0,
                             Title = "Metalltisch (klein)",
                             VATID = 1
                         },
@@ -1084,7 +1084,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 21,
                             ItemGroupID = 4,
-                            Price = 850m,
+                            Price = 850.0,
                             Title = "Metalltisch (gross)",
                             VATID = 1
                         },
@@ -1092,7 +1092,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 108,
                             ItemGroupID = 4,
-                            Price = 850m,
+                            Price = 850.0,
                             Title = "Glastisch (klein)",
                             VATID = 1
                         },
@@ -1100,7 +1100,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 22,
                             ItemGroupID = 4,
-                            Price = 1150m,
+                            Price = 1150.0,
                             Title = "Glastisch (gross)",
                             VATID = 1
                         },
@@ -1108,7 +1108,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 23,
                             ItemGroupID = 5,
-                            Price = 80m,
+                            Price = 80.0,
                             Title = "Holzstuhl",
                             VATID = 1
                         },
@@ -1116,7 +1116,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 24,
                             ItemGroupID = 5,
-                            Price = 1220m,
+                            Price = 1220.0,
                             Title = "Sessel",
                             VATID = 1
                         },
@@ -1124,7 +1124,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 25,
                             ItemGroupID = 5,
-                            Price = 50m,
+                            Price = 50.0,
                             Title = "Plastikstuhl",
                             VATID = 1
                         },
@@ -1132,7 +1132,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 26,
                             ItemGroupID = 5,
-                            Price = 11450m,
+                            Price = 11450.0,
                             Title = "Königlicher Thron",
                             VATID = 1
                         },
@@ -1140,7 +1140,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 27,
                             ItemGroupID = 8,
-                            Price = 4200m,
+                            Price = 4200.0,
                             Title = "Boxspringbett",
                             VATID = 1
                         },
@@ -1148,7 +1148,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 28,
                             ItemGroupID = 8,
-                            Price = 1200m,
+                            Price = 1200.0,
                             Title = "Kinderbett (Rakete)",
                             VATID = 1
                         },
@@ -1156,7 +1156,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 29,
                             ItemGroupID = 8,
-                            Price = 400m,
+                            Price = 400.0,
                             Title = "Babybett",
                             VATID = 1
                         },
@@ -1164,7 +1164,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 30,
                             ItemGroupID = 8,
-                            Price = 1300m,
+                            Price = 1300.0,
                             Title = "Hochbett",
                             VATID = 1
                         },
@@ -1172,7 +1172,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 31,
                             ItemGroupID = 13,
-                            Price = 1200m,
+                            Price = 1200.0,
                             Title = "Schreibtisch (Home)",
                             VATID = 1
                         },
@@ -1180,7 +1180,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 32,
                             ItemGroupID = 13,
-                            Price = 1300m,
+                            Price = 1300.0,
                             Title = "Schreibtisch (Office)",
                             VATID = 1
                         },
@@ -1188,7 +1188,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 33,
                             ItemGroupID = 13,
-                            Price = 1900m,
+                            Price = 1900.0,
                             Title = "Antiker Schreibtisch",
                             VATID = 1
                         },
@@ -1196,7 +1196,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 34,
                             ItemGroupID = 13,
-                            Price = 920m,
+                            Price = 920.0,
                             Title = "Kinder Schreibtisch",
                             VATID = 1
                         },
@@ -1204,7 +1204,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 35,
                             ItemGroupID = 4,
-                            Price = 23m,
+                            Price = 23.0,
                             Title = "LED Spot",
                             VATID = 1
                         },
@@ -1212,7 +1212,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 36,
                             ItemGroupID = 4,
-                            Price = 13m,
+                            Price = 13.0,
                             Title = "Deckenlampe",
                             VATID = 1
                         },
@@ -1220,7 +1220,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 37,
                             ItemGroupID = 4,
-                            Price = 130m,
+                            Price = 130.0,
                             Title = "Stehlampe",
                             VATID = 1
                         },
@@ -1228,7 +1228,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 38,
                             ItemGroupID = 22,
-                            Price = 1.5m,
+                            Price = 1.5,
                             Title = "Gummibären",
                             VATID = 1
                         },
@@ -1236,7 +1236,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 39,
                             ItemGroupID = 22,
-                            Price = 3.5m,
+                            Price = 3.5,
                             Title = "Zweifel Kartoffelchips",
                             VATID = 1
                         },
@@ -1244,7 +1244,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 40,
                             ItemGroupID = 22,
-                            Price = 4m,
+                            Price = 4.0,
                             Title = "Lindt Schokolade",
                             VATID = 1
                         },
@@ -1252,7 +1252,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 41,
                             ItemGroupID = 22,
-                            Price = 4m,
+                            Price = 4.0,
                             Title = "Vanilla Eis",
                             VATID = 1
                         },
@@ -1260,7 +1260,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 42,
                             ItemGroupID = 21,
-                            Price = 2.6m,
+                            Price = 2.6000000000000001,
                             Title = "Spaghetti",
                             VATID = 1
                         },
@@ -1268,7 +1268,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 43,
                             ItemGroupID = 21,
-                            Price = 2.7m,
+                            Price = 2.7000000000000002,
                             Title = "Vollkorn Spaghetti",
                             VATID = 1
                         },
@@ -1276,7 +1276,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 109,
                             ItemGroupID = 21,
-                            Price = 1.3m,
+                            Price = 1.3,
                             Title = "Hördli",
                             VATID = 1
                         },
@@ -1284,7 +1284,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 44,
                             ItemGroupID = 21,
-                            Price = 3.1m,
+                            Price = 3.1000000000000001,
                             Title = "Penne",
                             VATID = 1
                         },
@@ -1292,7 +1292,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 45,
                             ItemGroupID = 20,
-                            Price = 1.3m,
+                            Price = 1.3,
                             Title = "Fanta",
                             VATID = 1
                         },
@@ -1300,7 +1300,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 46,
                             ItemGroupID = 20,
-                            Price = 1.3m,
+                            Price = 1.3,
                             Title = "Rivella",
                             VATID = 1
                         },
@@ -1308,7 +1308,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 47,
                             ItemGroupID = 20,
-                            Price = 1.3m,
+                            Price = 1.3,
                             Title = "Coca Cola",
                             VATID = 1
                         },
@@ -1316,7 +1316,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 48,
                             ItemGroupID = 20,
-                            Price = 11.3m,
+                            Price = 11.300000000000001,
                             Title = "Schanpps",
                             VATID = 1
                         },
@@ -1324,7 +1324,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 49,
                             ItemGroupID = 20,
-                            Price = 1.3m,
+                            Price = 1.3,
                             Title = "Eistee",
                             VATID = 1
                         },
@@ -1332,7 +1332,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 50,
                             ItemGroupID = 23,
-                            Price = 19m,
+                            Price = 19.0,
                             Title = "Stirnband",
                             VATID = 1
                         },
@@ -1340,7 +1340,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 51,
                             ItemGroupID = 23,
-                            Price = 130m,
+                            Price = 130.0,
                             Title = "Laufsensor",
                             VATID = 1
                         },
@@ -1348,7 +1348,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 52,
                             ItemGroupID = 23,
-                            Price = 29.9m,
+                            Price = 29.899999999999999,
                             Title = "Läufer Cap",
                             VATID = 1
                         },
@@ -1356,7 +1356,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 53,
                             ItemGroupID = 24,
-                            Price = 11200m,
+                            Price = 11200.0,
                             Title = "Rennvelo Pro",
                             VATID = 1
                         },
@@ -1364,7 +1364,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 54,
                             ItemGroupID = 24,
-                            Price = 9200m,
+                            Price = 9200.0,
                             Title = "Rennvelo Medium",
                             VATID = 1
                         },
@@ -1372,7 +1372,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 55,
                             ItemGroupID = 24,
-                            Price = 1200m,
+                            Price = 1200.0,
                             Title = "Rennvelo Beginner",
                             VATID = 1
                         },
@@ -1380,7 +1380,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 56,
                             ItemGroupID = 24,
-                            Price = 11200m,
+                            Price = 11200.0,
                             Title = "Velohelm",
                             VATID = 1
                         },
@@ -1388,7 +1388,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 57,
                             ItemGroupID = 24,
-                            Price = 34m,
+                            Price = 34.0,
                             Title = "Fahrrad Licht",
                             VATID = 1
                         },
@@ -1396,7 +1396,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 58,
                             ItemGroupID = 24,
-                            Price = 140m,
+                            Price = 140.0,
                             Title = "Fahrradhose",
                             VATID = 1
                         },
@@ -1404,7 +1404,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 59,
                             ItemGroupID = 24,
-                            Price = 120m,
+                            Price = 120.0,
                             Title = "Fahrrad Shirt",
                             VATID = 1
                         },
@@ -1412,7 +1412,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 60,
                             ItemGroupID = 25,
-                            Price = 11200m,
+                            Price = 11200.0,
                             Title = "Hantel 30kg",
                             VATID = 1
                         },
@@ -1420,7 +1420,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 61,
                             ItemGroupID = 25,
-                            Price = 3500m,
+                            Price = 3500.0,
                             Title = "Hantelstange 120cm",
                             VATID = 1
                         },
@@ -1428,7 +1428,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 62,
                             ItemGroupID = 26,
-                            Price = 8400m,
+                            Price = 8400.0,
                             Title = "Kettlebell 16kg",
                             VATID = 1
                         },
@@ -1436,7 +1436,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 63,
                             ItemGroupID = 25,
-                            Price = 23000m,
+                            Price = 23000.0,
                             Title = "Langhantel-Set 60kg",
                             VATID = 1
                         },
@@ -1444,7 +1444,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 64,
                             ItemGroupID = 25,
-                            Price = 8000m,
+                            Price = 8000.0,
                             Title = "Hantelscheiben 25kg (x2)",
                             VATID = 1
                         },
@@ -1452,7 +1452,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 65,
                             ItemGroupID = 27,
-                            Price = 5900m,
+                            Price = 5900.0,
                             Title = "Yoga-Matte",
                             VATID = 1
                         },
@@ -1460,7 +1460,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 66,
                             ItemGroupID = 26,
-                            Price = 100m,
+                            Price = 100.0,
                             Title = "Designer T-Shirt",
                             VATID = 1
                         },
@@ -1468,7 +1468,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 67,
                             ItemGroupID = 26,
-                            Price = 60m,
+                            Price = 60.0,
                             Title = "Graues T-Shirt",
                             VATID = 1
                         },
@@ -1476,7 +1476,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 68,
                             ItemGroupID = 26,
-                            Price = 55m,
+                            Price = 55.0,
                             Title = "Weißes T-Shirt",
                             VATID = 1
                         },
@@ -1484,7 +1484,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 69,
                             ItemGroupID = 26,
-                            Price = 70m,
+                            Price = 70.0,
                             Title = "Schwarzes T-Shirt",
                             VATID = 1
                         },
@@ -1492,7 +1492,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 70,
                             ItemGroupID = 26,
-                            Price = 65m,
+                            Price = 65.0,
                             Title = "Blaues T-Shirt",
                             VATID = 1
                         },
@@ -1500,7 +1500,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 71,
                             ItemGroupID = 26,
-                            Price = 75m,
+                            Price = 75.0,
                             Title = "Grünes T-Shirt",
                             VATID = 1
                         },
@@ -1508,7 +1508,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 72,
                             ItemGroupID = 26,
-                            Price = 80m,
+                            Price = 80.0,
                             Title = "Rotes T-Shirt",
                             VATID = 1
                         },
@@ -1516,7 +1516,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 73,
                             ItemGroupID = 26,
-                            Price = 50m,
+                            Price = 50.0,
                             Title = "Gelbes T-Shirt",
                             VATID = 1
                         },
@@ -1524,7 +1524,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 74,
                             ItemGroupID = 26,
-                            Price = 70m,
+                            Price = 70.0,
                             Title = "Orange T-Shirt",
                             VATID = 1
                         },
@@ -1532,7 +1532,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 75,
                             ItemGroupID = 26,
-                            Price = 60m,
+                            Price = 60.0,
                             Title = "Lila T-Shirt",
                             VATID = 1
                         },
@@ -1540,7 +1540,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 76,
                             ItemGroupID = 26,
-                            Price = 65m,
+                            Price = 65.0,
                             Title = "Rosa T-Shirt",
                             VATID = 1
                         },
@@ -1548,7 +1548,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 77,
                             ItemGroupID = 27,
-                            Price = 120m,
+                            Price = 120.0,
                             Title = "Hose lang Baumwolle",
                             VATID = 1
                         },
@@ -1556,7 +1556,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 78,
                             ItemGroupID = 27,
-                            Price = 110m,
+                            Price = 110.0,
                             Title = "Hose kurz Baumwolle",
                             VATID = 1
                         },
@@ -1564,7 +1564,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 79,
                             ItemGroupID = 27,
-                            Price = 140m,
+                            Price = 140.0,
                             Title = "Jeanshose Slim Fit",
                             VATID = 1
                         },
@@ -1572,7 +1572,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 80,
                             ItemGroupID = 27,
-                            Price = 16m,
+                            Price = 16.0,
                             Title = "Hose aus China-Stoff",
                             VATID = 1
                         },
@@ -1580,7 +1580,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 81,
                             ItemGroupID = 27,
-                            Price = 200m,
+                            Price = 200.0,
                             Title = "Leinenhose",
                             VATID = 1
                         },
@@ -1588,7 +1588,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 82,
                             ItemGroupID = 27,
-                            Price = 90m,
+                            Price = 90.0,
                             Title = "Jogginghose",
                             VATID = 1
                         },
@@ -1596,7 +1596,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 83,
                             ItemGroupID = 28,
-                            Price = 190m,
+                            Price = 190.0,
                             Title = "Winterjacke",
                             VATID = 1
                         },
@@ -1604,7 +1604,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 84,
                             ItemGroupID = 28,
-                            Price = 250m,
+                            Price = 250.0,
                             Title = "Daunenjacke",
                             VATID = 1
                         },
@@ -1612,7 +1612,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 85,
                             ItemGroupID = 28,
-                            Price = 220m,
+                            Price = 220.0,
                             Title = "Parka",
                             VATID = 1
                         },
@@ -1620,7 +1620,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 86,
                             ItemGroupID = 28,
-                            Price = 180m,
+                            Price = 180.0,
                             Title = "Steppjacke",
                             VATID = 1
                         },
@@ -1628,7 +1628,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 87,
                             ItemGroupID = 28,
-                            Price = 150m,
+                            Price = 150.0,
                             Title = "Regenjacke",
                             VATID = 1
                         },
@@ -1636,7 +1636,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 88,
                             ItemGroupID = 28,
-                            Price = 200m,
+                            Price = 200.0,
                             Title = "Wolljacke",
                             VATID = 1
                         },
@@ -1644,7 +1644,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 89,
                             ItemGroupID = 29,
-                            Price = 190m,
+                            Price = 190.0,
                             Title = "Sommerkleid",
                             VATID = 1
                         },
@@ -1652,7 +1652,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 90,
                             ItemGroupID = 29,
-                            Price = 150m,
+                            Price = 150.0,
                             Title = "Maxikleid",
                             VATID = 1
                         },
@@ -1660,7 +1660,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 91,
                             ItemGroupID = 29,
-                            Price = 170m,
+                            Price = 170.0,
                             Title = "Empirekleid",
                             VATID = 1
                         },
@@ -1668,7 +1668,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 92,
                             ItemGroupID = 29,
-                            Price = 220m,
+                            Price = 220.0,
                             Title = "Spitzenkleid",
                             VATID = 1
                         },
@@ -1676,7 +1676,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 93,
                             ItemGroupID = 29,
-                            Price = 300m,
+                            Price = 300.0,
                             Title = "Abendkleid",
                             VATID = 1
                         },
@@ -1684,7 +1684,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 94,
                             ItemGroupID = 29,
-                            Price = 160m,
+                            Price = 160.0,
                             Title = "Wickelkleid",
                             VATID = 1
                         },
@@ -1692,7 +1692,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 95,
                             ItemGroupID = 30,
-                            Price = 190m,
+                            Price = 190.0,
                             Title = "Sommerbluse",
                             VATID = 1
                         },
@@ -1700,7 +1700,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 96,
                             ItemGroupID = 30,
-                            Price = 130m,
+                            Price = 130.0,
                             Title = "Hemdbluse",
                             VATID = 1
                         },
@@ -1708,7 +1708,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 97,
                             ItemGroupID = 30,
-                            Price = 160m,
+                            Price = 160.0,
                             Title = "Spitzenbluse",
                             VATID = 1
                         },
@@ -1716,7 +1716,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 98,
                             ItemGroupID = 30,
-                            Price = 140m,
+                            Price = 140.0,
                             Title = "Chiffonbluse",
                             VATID = 1
                         },
@@ -1724,7 +1724,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 99,
                             ItemGroupID = 30,
-                            Price = 170m,
+                            Price = 170.0,
                             Title = "Karobluse",
                             VATID = 1
                         },
@@ -1732,7 +1732,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 100,
                             ItemGroupID = 30,
-                            Price = 150m,
+                            Price = 150.0,
                             Title = "Rüschenbluse",
                             VATID = 1
                         },
@@ -1740,7 +1740,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 101,
                             ItemGroupID = 31,
-                            Price = 190m,
+                            Price = 190.0,
                             Title = "Ultra kurz Rock",
                             VATID = 1
                         },
@@ -1748,7 +1748,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 102,
                             ItemGroupID = 31,
-                            Price = 140m,
+                            Price = 140.0,
                             Title = "Midi Rock",
                             VATID = 1
                         },
@@ -1756,7 +1756,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 103,
                             ItemGroupID = 31,
-                            Price = 170m,
+                            Price = 170.0,
                             Title = "Bleistiftrock",
                             VATID = 1
                         },
@@ -1764,7 +1764,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 104,
                             ItemGroupID = 31,
-                            Price = 160m,
+                            Price = 160.0,
                             Title = "A-Linie Rock",
                             VATID = 1
                         },
@@ -1772,7 +1772,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 105,
                             ItemGroupID = 31,
-                            Price = 130m,
+                            Price = 130.0,
                             Title = "Plissee Rock",
                             VATID = 1
                         },
@@ -1780,7 +1780,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             ItemID = 106,
                             ItemGroupID = 31,
-                            Price = 150m,
+                            Price = 150.0,
                             Title = "Schleifenrock",
                             VATID = 1
                         });
@@ -3079,7 +3079,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
             modelBuilder.Entity("Projektarbeit_Auftragsverwaltung.Model.ItemGroup", b =>
                 {
                     b.HasOne("Projektarbeit_Auftragsverwaltung.Model.ItemGroup", "Parent")
-                        .WithMany("Children")
+                        .WithMany("Childrens")
                         .HasForeignKey("ParentID");
 
                     b.Navigation("Parent");
@@ -3099,7 +3099,7 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
             modelBuilder.Entity("Projektarbeit_Auftragsverwaltung.Model.OrderPosition", b =>
                 {
                     b.HasOne("Projektarbeit_Auftragsverwaltung.Model.Item", "Item")
-                        .WithMany("OrderPosition")
+                        .WithMany("OrderPositions")
                         .HasForeignKey("ItemID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -3127,12 +3127,12 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
 
             modelBuilder.Entity("Projektarbeit_Auftragsverwaltung.Model.Item", b =>
                 {
-                    b.Navigation("OrderPosition");
+                    b.Navigation("OrderPositions");
                 });
 
             modelBuilder.Entity("Projektarbeit_Auftragsverwaltung.Model.ItemGroup", b =>
                 {
-                    b.Navigation("Children");
+                    b.Navigation("Childrens");
 
                     b.Navigation("Items");
                 });
