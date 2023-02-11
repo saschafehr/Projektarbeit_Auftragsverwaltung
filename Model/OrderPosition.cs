@@ -12,11 +12,11 @@ namespace Projektarbeit_Auftragsverwaltung.Model
     {
         
         public int OrderPositionID { get; set; }
-       
         public int OrderID { get; set; }
         public virtual Order Order { get; set; }
         public int ItemID { get; set; }
         public virtual Item Item { get; set; }
+        public int Amount { get; set; }
         
     }
 }

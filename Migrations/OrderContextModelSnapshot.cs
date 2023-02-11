@@ -2301,6 +2301,9 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                     b.Property<int>("OrderPositionID")
                         .HasColumnType("int");
 
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
                     b.Property<int>("ItemID")
                         .HasColumnType("int");
 
@@ -2315,684 +2318,798 @@ namespace ProjektarbeitAuftragsverwaltung.Migrations
                         {
                             OrderID = 1,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 41
                         },
                         new
                         {
                             OrderID = 1,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 56
                         },
                         new
                         {
                             OrderID = 2,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 89
                         },
                         new
                         {
                             OrderID = 3,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 47
                         },
                         new
                         {
                             OrderID = 4,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 81
                         },
                         new
                         {
                             OrderID = 5,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 22
                         },
                         new
                         {
                             OrderID = 5,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 70
                         },
                         new
                         {
                             OrderID = 6,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 61
                         },
                         new
                         {
                             OrderID = 7,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 93
                         },
                         new
                         {
                             OrderID = 7,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 15
                         },
                         new
                         {
                             OrderID = 8,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 76
                         },
                         new
                         {
                             OrderID = 9,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 53
                         },
                         new
                         {
                             OrderID = 9,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 38
                         },
                         new
                         {
                             OrderID = 9,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 21
                         },
                         new
                         {
                             OrderID = 10,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 34
                         },
                         new
                         {
                             OrderID = 11,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 12
                         },
                         new
                         {
                             OrderID = 11,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 59
                         },
                         new
                         {
                             OrderID = 12,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 96
                         },
                         new
                         {
                             OrderID = 13,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 82
                         },
                         new
                         {
                             OrderID = 14,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 19
                         },
                         new
                         {
                             OrderID = 14,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 80
                         },
                         new
                         {
                             OrderID = 15,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 60
                         },
                         new
                         {
                             OrderID = 16,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 49
                         },
                         new
                         {
                             OrderID = 17,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 87
                         },
                         new
                         {
                             OrderID = 17,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 24
                         },
                         new
                         {
                             OrderID = 17,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 68
                         },
                         new
                         {
                             OrderID = 18,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 31
                         },
                         new
                         {
                             OrderID = 19,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 69
                         },
                         new
                         {
                             OrderID = 19,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 16
                         },
                         new
                         {
                             OrderID = 20,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 74
                         },
                         new
                         {
                             OrderID = 20,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 47
                         },
                         new
                         {
                             OrderID = 21,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 84
                         },
                         new
                         {
                             OrderID = 22,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 42
                         },
                         new
                         {
                             OrderID = 22,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 12
                         },
                         new
                         {
                             OrderID = 23,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 99
                         },
                         new
                         {
                             OrderID = 23,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 51
                         },
                         new
                         {
                             OrderID = 24,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 61
                         },
                         new
                         {
                             OrderID = 25,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 92
                         },
                         new
                         {
                             OrderID = 26,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 65
                         },
                         new
                         {
                             OrderID = 26,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 20
                         },
                         new
                         {
                             OrderID = 26,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 33
                         },
                         new
                         {
                             OrderID = 27,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 79
                         },
                         new
                         {
                             OrderID = 28,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 2
                         },
                         new
                         {
                             OrderID = 28,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 72
                         },
                         new
                         {
                             OrderID = 29,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 95
                         },
                         new
                         {
                             OrderID = 30,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 29
                         },
                         new
                         {
                             OrderID = 31,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 23
                         },
                         new
                         {
                             OrderID = 31,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 85
                         },
                         new
                         {
                             OrderID = 32,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 50
                         },
                         new
                         {
                             OrderID = 33,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 70
                         },
                         new
                         {
                             OrderID = 34,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 100
                         },
                         new
                         {
                             OrderID = 34,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 40
                         },
                         new
                         {
                             OrderID = 35,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 56
                         },
                         new
                         {
                             OrderID = 36,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 20
                         },
                         new
                         {
                             OrderID = 36,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 80
                         },
                         new
                         {
                             OrderID = 36,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 10
                         },
                         new
                         {
                             OrderID = 37,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 95
                         },
                         new
                         {
                             OrderID = 37,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 4
                         },
                         new
                         {
                             OrderID = 38,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 1
                         },
                         new
                         {
                             OrderID = 39,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 23
                         },
                         new
                         {
                             OrderID = 39,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 45
                         },
                         new
                         {
                             OrderID = 39,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 67
                         },
                         new
                         {
                             OrderID = 40,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 89
                         },
                         new
                         {
                             OrderID = 40,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 101
                         },
                         new
                         {
                             OrderID = 40,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 34
                         },
                         new
                         {
                             OrderID = 41,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 17
                         },
                         new
                         {
                             OrderID = 41,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 20
                         },
                         new
                         {
                             OrderID = 41,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 23
                         },
                         new
                         {
                             OrderID = 41,
                             OrderPositionID = 4,
+                            Amount = 2,
                             ItemID = 78
                         },
                         new
                         {
                             OrderID = 42,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 50
                         },
                         new
                         {
                             OrderID = 42,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 68
                         },
                         new
                         {
                             OrderID = 42,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 30
                         },
                         new
                         {
                             OrderID = 42,
                             OrderPositionID = 4,
+                            Amount = 2,
                             ItemID = 96
                         },
                         new
                         {
                             OrderID = 42,
                             OrderPositionID = 5,
+                            Amount = 2,
                             ItemID = 12
                         },
                         new
                         {
                             OrderID = 43,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 65
                         },
                         new
                         {
                             OrderID = 43,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 33
                         },
                         new
                         {
                             OrderID = 43,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 92
                         },
                         new
                         {
                             OrderID = 43,
                             OrderPositionID = 4,
+                            Amount = 2,
                             ItemID = 56
                         },
                         new
                         {
                             OrderID = 43,
                             OrderPositionID = 5,
+                            Amount = 2,
                             ItemID = 89
                         },
                         new
                         {
                             OrderID = 44,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 21
                         },
                         new
                         {
                             OrderID = 44,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 10
                         },
                         new
                         {
                             OrderID = 44,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 103
                         },
                         new
                         {
                             OrderID = 44,
                             OrderPositionID = 4,
+                            Amount = 2,
                             ItemID = 74
                         },
                         new
                         {
                             OrderID = 44,
                             OrderPositionID = 5,
+                            Amount = 2,
                             ItemID = 77
                         },
                         new
                         {
                             OrderID = 45,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 67
                         },
                         new
                         {
                             OrderID = 45,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 29
                         },
                         new
                         {
                             OrderID = 45,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 71
                         },
                         new
                         {
                             OrderID = 45,
                             OrderPositionID = 4,
+                            Amount = 2,
                             ItemID = 86
                         },
                         new
                         {
                             OrderID = 45,
                             OrderPositionID = 5,
+                            Amount = 2,
                             ItemID = 100
                         },
                         new
                         {
                             OrderID = 46,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 47
                         },
                         new
                         {
                             OrderID = 46,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 26
                         },
                         new
                         {
                             OrderID = 46,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 70
                         },
                         new
                         {
                             OrderID = 46,
                             OrderPositionID = 4,
+                            Amount = 2,
                             ItemID = 71
                         },
                         new
                         {
                             OrderID = 46,
                             OrderPositionID = 5,
+                            Amount = 2,
                             ItemID = 94
                         },
                         new
                         {
                             OrderID = 47,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 12
                         },
                         new
                         {
                             OrderID = 47,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 19
                         },
                         new
                         {
                             OrderID = 47,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 59
                         },
                         new
                         {
                             OrderID = 47,
                             OrderPositionID = 4,
+                            Amount = 2,
                             ItemID = 76
                         },
                         new
                         {
                             OrderID = 47,
                             OrderPositionID = 5,
+                            Amount = 2,
                             ItemID = 92
                         },
                         new
                         {
                             OrderID = 48,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 87
                         },
                         new
                         {
                             OrderID = 48,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 29
                         },
                         new
                         {
                             OrderID = 48,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 46
                         },
                         new
                         {
                             OrderID = 48,
                             OrderPositionID = 4,
+                            Amount = 2,
                             ItemID = 72
                         },
                         new
                         {
                             OrderID = 48,
                             OrderPositionID = 5,
+                            Amount = 2,
                             ItemID = 101
                         },
                         new
                         {
                             OrderID = 49,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 42
                         },
                         new
                         {
                             OrderID = 49,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 70
                         },
                         new
                         {
                             OrderID = 49,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 86
                         },
                         new
                         {
                             OrderID = 49,
                             OrderPositionID = 4,
+                            Amount = 2,
                             ItemID = 104
                         },
                         new
                         {
                             OrderID = 49,
                             OrderPositionID = 5,
+                            Amount = 2,
                             ItemID = 59
                         },
                         new
                         {
                             OrderID = 50,
                             OrderPositionID = 1,
+                            Amount = 2,
                             ItemID = 53
                         },
                         new
                         {
                             OrderID = 50,
                             OrderPositionID = 2,
+                            Amount = 2,
                             ItemID = 27
                         },
                         new
                         {
                             OrderID = 50,
                             OrderPositionID = 3,
+                            Amount = 2,
                             ItemID = 59
                         },
                         new
                         {
                             OrderID = 50,
                             OrderPositionID = 4,
+                            Amount = 2,
                             ItemID = 98
                         },
                         new
                         {
                             OrderID = 50,
                             OrderPositionID = 5,
+                            Amount = 2,
                             ItemID = 16
                         });
                 });
